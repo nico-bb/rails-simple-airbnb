@@ -1,0 +1,7 @@
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <% @flats.each do |flat| %>
+      <%= render "flat", flat: flat %>
+    <% end %>
+  </div>
+</div>

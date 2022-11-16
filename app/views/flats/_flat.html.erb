@@ -1,0 +1,14 @@
+<div class="p-0 m-2 card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body bg-light">
+    <h5 class="card-title"><%= flat.name %></h5>
+    <p class="card-text"><%= flat.description %></p>
+  </div>
+  <div class="card-body">
+    <%= link_to "More info", flat_path(flat), class: "card-link" %>
+    <%= link_to "Edit", edit_flat_path(flat), class: "card-link text-warning" %>
+    <%= link_to "Delete", flat_path(flat), class: "card-link text-danger" %>
+    <%# <a href="#" class="card-link text-warning">Edit</a>
+    <a href="#" class="card-link text-danger">Remove</a> %>
+  </div>
+</div>
